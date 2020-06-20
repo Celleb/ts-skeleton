@@ -31,6 +31,6 @@
     }
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "build", "**/*.spec.ts", "./scripts"],
+  "exclude": ["node_modules", "build", "**/*.spec.ts"],
   "types": ["typePatches"]
 }
