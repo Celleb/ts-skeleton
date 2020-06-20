@@ -4,9 +4,9 @@
   "description": "Resful query builder for mongodb with mongoose",
   "main": "index.js",
   "scripts": {
-    "build": "yarn tsc",
-    "build:watch": "yarn tsc --watch",
-    "test": "yarn jest"
+    "build": "npx tsc",
+    "build:watch": "npx tsc --watch",
+    "test": "npx jest"
   },
   "keywords": [
     "Typescript",
