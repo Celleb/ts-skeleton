@@ -1,0 +1,30 @@
+{
+  "name": "@celleb/ts-skeleton",
+  "version": "1.0.0",
+  "description": "Resful query builder for mongodb with mongoose",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn tsc",
+    "build:watch": "yarn tsc --watch",
+    "test": "yarn jest"
+  },
+  "keywords": [
+    "Typescript",
+    "getting",
+    "project",
+    "started",
+    "setup"
+  ],
+  "dependencies": {},
+  "author": "Author Goes Here",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "@types/node": "^14.0.13",
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.5"
+  }
+}
