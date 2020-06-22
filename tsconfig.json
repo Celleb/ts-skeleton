@@ -3,14 +3,14 @@
   "compilerOptions": {
     "declaration": true,
     "declarationMap": true,
-    "outDir": "./dist/build",
+    "outDir": "./dist",
     "module": "commonjs",
     "target": "ES2019",
-    "lib": ["es6"],
+    "lib": ["es6", "ES7"],
     "sourceMap": true,
     "allowJs": true,
     "strict": true,
-    "noEmit": true,
+    "noEmit": false,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -20,7 +20,7 @@
     "noImplicitThis": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "noUnusedLocals": true, // Report errors on unused locals
+    "noUnusedLocals": true,
     "noUnusedParameters": true,
     "baseUrl": ".",
     "paths": {
@@ -31,6 +31,6 @@
     }
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "build", "**/*.spec.ts"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts", "./scripts"],
   "types": ["typePatches"]
 }

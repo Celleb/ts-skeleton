@@ -1,12 +1,16 @@
 {
   "name": "@celleb/ts-skeleton",
-  "version": "1.0.0",
-  "description": "Resful query builder for mongodb with mongoose",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Typescript project skeleton",
   "scripts": {
     "build": "npx tsc",
     "build:watch": "npx tsc --watch",
-    "test": "npx jest"
+    "package": "node ./scripts/override-package.js",
+    "preversion": "npm run test",
+    "version": "npm run build && npm run package && git add .",
+    "postversion": "git push && git push --tags",
+    "test": "npx jest",
+    "test:watch": "npx jest --watch"
   },
   "keywords": [
     "Typescript",
@@ -16,8 +20,6 @@
     "setup"
   ],
   "dependencies": {},
-  "author": "Author Goes Here",
-  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.0",
     "@types/node": "^14.0.13",
@@ -26,5 +28,15 @@
     "jest": "^26.0.1",
     "ts-jest": "^26.1.0",
     "typescript": "^3.9.5"
-  }
+  },
+  "author": "Jonas <celleb@mrcelleb.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Celleb/ts-skeleton/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Celleb/ts-skeleton.git"
+  },
+  "homepage": "https://github.com/Celleb/ts-skeleton/blob/master/README.md"
 }
